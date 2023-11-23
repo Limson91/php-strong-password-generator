@@ -1,6 +1,8 @@
 <?php
+require './function.php';
 
-$pw_char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!£$%&/()=?^+*-_'
+$pw_char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!£$%&/()=?^+*-_';
+$pw_length = $_GET['pw-length'] ?? 0;
 
 ?>
 
