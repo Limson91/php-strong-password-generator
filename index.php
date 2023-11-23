@@ -17,9 +17,12 @@ $pw_length = $_GET['pw-length'] ?? 0;
 <body>
     <form action="" method="GET">
         <input type="text" name="pw-length">
-        <input type="submit" valure="Send">
+        <input type="submit" value="Send">
     </form>
 
-    <h3>Your secure password is:</h3>
+    <h3>
+        <?php if($pw_length > 0) { ?>
+        Your secure password is: <?php } echo passwordGenerator($pw_char, $pw_length, $password); ?>
+    </h3>
 </body>
 </html>
